@@ -1,12 +1,14 @@
-import React from 'react'
-import Navbar from './Components/Navigation'
+import React from "react";
+import Navbar from "./Components/Navigation";
+import Hero from "./Components/Hero";
 
 const App = () => {
   return (
-    <div className='min-h-screen bg-[var(--bg-page)]'>
+    <div className="min-h-screen bg-[var(--bg-page)]">
       <Navbar />
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
