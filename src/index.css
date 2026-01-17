@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+/* =========================================================
+   CRDTLIN SOLUTION – CORE DESIGN TOKENS
+   Purpose: Clean tech water brand, Tailwind-friendly
+   ========================================================= */
+
+:root {
+
+  /* =====================================================
+     BRAND COLORS
+     Use: Hero, navbar, headings, brand identity
+     ===================================================== */
+
+  --clr-primary: #0A2540;   /* Main brand blue */
+  --clr-primary-dark: #020617; /* Footer, dark sections */
+  --clr-primary-soft: #0E7490; /* Overlays, gradients */
+
+  --clr-secondary: #38BDF8; /* Primary CTA */
+  --clr-accent: #22D3EE;    /* Highlights, focus, hover */
+
+
+  /* =====================================================
+     NEUTRALS
+     Use: Backgrounds, text, borders
+     ===================================================== */
+
+  --clr-white: #FFFFFF;
+  --clr-black: #020617;
+
+  --clr-bg: #F8FAFC;        /* Page background */
+  --clr-bg-muted: #F1F5F9;  /* Section background */
+
+  --clr-text: #0F172A;      /* Main text */
+  --clr-text-muted: #64748B;/* Secondary text */
+
+  --clr-border: #E2E8F0;    /* Borders & dividers */
+
+
+  /* =====================================================
+     SEMANTIC TOKENS
+     Use: Never hard-code colors elsewhere
+     ===================================================== */
+
+  --bg-page: var(--clr-bg);
+  --bg-section: var(--clr-white);
+  --bg-dark: var(--clr-primary-dark);
+
+  --text-primary: var(--clr-text);
+  --text-secondary: var(--clr-text-muted);
+  --text-inverse: var(--clr-white);
+
+
+  /* =====================================================
+     GRADIENTS
+     Use: Hero background, CTA buttons only
+     ===================================================== */
+
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--clr-primary),
+    var(--clr-primary-soft)
+  );
+
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--clr-secondary),
+    var(--clr-accent)
+  );
+
+
+  /* =====================================================
+     TYPOGRAPHY
+     Use: Entire website
+     ===================================================== */
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+
+  /* =====================================================
+     RADIUS & SHADOW
+     Use: Cards, buttons, inputs
+     ===================================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 12px 32px rgba(2, 132, 199, 0.15);
+
+
+  /* =====================================================
+     ANIMATION TOKENS
+     Use: ALL transitions & motion
+     ===================================================== */
+
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+
+}
